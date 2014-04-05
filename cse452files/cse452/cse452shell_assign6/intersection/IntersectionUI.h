@@ -1,0 +1,39 @@
+#ifndef _INTERSECTION_UI_H_
+#define _INTERSECTION_UI_H_
+
+#include "../cse452.h"
+#include "HitRecord.h"
+#include "../UIInterface.h"
+#include <FL/Fl_Window.H>
+
+#include "../shapes/ShapesUI.h" //where the shapes are defined (includes MyShape.h)
+
+class IntersectionInterface;
+class IntersectionUI : public UIInterface {
+public:
+    IntersectionUI();
+    ~IntersectionUI();
+
+    // Inherited from userInterface
+    void resize(int width, int height);
+    void draw();
+    int handle(int event);
+
+    // Link to the intersection widget
+    void setUI( const IntersectionInterface *in_ui ) { intersectionUI = in_ui; }
+    void changeShape( ShapesUI::ShapeType type );
+
+    void writeTest() const;
+
+private:
+    const IntersectionInterface *intersectionUI;
+    int width, height;
+
+    void drawHits(HitRecord& hr);
+
+    // declare your variables here
+	MyShape *currentShape; //the current shape we have
+	int t1, t2;
+};
+
+#endif /* _INTERSECTION_UI_H_ */

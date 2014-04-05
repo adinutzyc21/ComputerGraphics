@@ -1,0 +1,62 @@
+﻿Build started 2/12/2013 11:45:24 PM.
+     1>Project "C:\Users\Adina\Dropbox\Private\Graphics\cse452files\cse452\cse452shell_assign2\cse452shell.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "..\objs\cse452shell.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../include /Ivecmath /I. /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\objs\\" /Fd"..\objs\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GLWindow.cpp main.cpp shapes\MyShape.cpp ShellInterface.cpp brush\MyBrush.cpp brush\MyBrush_UI.cpp shapes\ShapesInterface.cpp shapes\ShapesUI.cpp
+         GLWindow.cpp
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(10): error C2236: unexpected 'class' 'myShape'. Did you forget a ';'?
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         main.cpp
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(10): error C2236: unexpected 'class' 'myShape'. Did you forget a ';'?
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         MyShape.cpp
+     1>shapes\MyShape.cpp(2): fatal error C1083: Cannot open include file: 'MyBrush.h': No such file or directory
+         ShellInterface.cpp
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(10): error C2236: unexpected 'class' 'myShape'. Did you forget a ';'?
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         MyBrush.cpp
+     1>brush\MyBrush.cpp(146): error C2668: 'sqrt' : ambiguous call to overloaded function
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h(589): could be 'long double sqrt(long double)'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h(541): or       'float sqrt(float)'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h(127): or       'double sqrt(double)'
+                 while trying to match the argument list '(int)'
+     1>brush\MyBrush.cpp(195): warning C4244: 'initializing' : conversion from 'int' to 'const float', possible loss of data
+     1>brush\MyBrush.cpp(437): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>brush\MyBrush.cpp(441): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>brush\MyBrush.cpp(445): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>brush\MyBrush.cpp(449): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         MyBrush_UI.cpp
+     1>brush\MyBrush_UI.cpp(118): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>brush\MyBrush_UI.cpp(121): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>brush\MyBrush_UI.cpp(121): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>brush\MyBrush_UI.cpp(122): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>brush\MyBrush_UI.cpp(122): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>brush\MyBrush_UI.cpp(130): error C2668: 'sqrt' : ambiguous call to overloaded function
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h(589): could be 'long double sqrt(long double)'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h(541): or       'float sqrt(float)'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h(127): or       'double sqrt(double)'
+                 while trying to match the argument list '(int)'
+     1>brush\MyBrush_UI.cpp(136): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+         ShapesInterface.cpp
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(10): error C2236: unexpected 'class' 'myShape'. Did you forget a ';'?
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         ShapesUI.cpp
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(10): error C2236: unexpected 'class' 'myShape'. Did you forget a ';'?
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\adina\dropbox\private\graphics\cse452files\cse452\cse452shell_assign2\shapes\ShapesUI.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Generating Code...
+     1>Done Building Project "C:\Users\Adina\Dropbox\Private\Graphics\cse452files\cse452\cse452shell_assign2\cse452shell.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.42
