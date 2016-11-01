@@ -1,4 +1,4 @@
 ComputerGraphics
 ================
 
-Computer Graphics course
+Washington University in St. Louis, Spring 2013
